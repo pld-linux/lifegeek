@@ -1,10 +1,10 @@
 diff -burN lifegeek.orig/version.c lifegeek/version.c
---- lifegeek.orig/version.c	2004-03-17 21:52:47.622426272 +0100
-+++ lifegeek/version.c	2004-03-17 21:53:34.716266920 +0100
-@@ -56,10 +56,10 @@
-    are for the directory where program is run from; change if you are using
-    someone's translation and/or installing the program somewhere e.g. 
-    "/usr/local/share/lifegeek/main.lg", "main-mytranslation.lg". */
+--- lifegeek.orig/version.c	2004-04-02 03:50:16.000000000 +0200
++++ lifegeek/version.c	2004-04-04 13:15:32.914395160 +0200
+@@ -61,10 +61,10 @@
+ 
+    NOTE: Before you change the install locations, see the file INSTALL for
+    important information. */
 -char* MAINFILE = "/usr/local/share/lifegeek/main.lg";
 -char* LICENSEFILE = "/usr/local/share/lifegeek/license.lg";
 -char* WASTEFILE = "/usr/local/share/lifegeek/waste.lg";
@@ -16,3 +16,17 @@ diff -burN lifegeek.orig/version.c lifegeek/version.c
  
  /* Score file
  
+@@ -74,11 +74,11 @@
+    NOTE: Before you change the install locations, see the file INSTALL for
+    important information. */
+ 
+-char* SCOREFILE = "/usr/local/share/lifegeek/scores.lgs";
++char* SCOREFILE = "/var/games/lifegeek/scores.lgs";
+ 
+ /* Save files in this directory
+    NOTE: Before you change the install locations, see the file INSTALL for
+    important information. */
+-char* SAVEFILES = "/usr/local/share/lifegeek";
++char* SAVEFILES = "/var/games/lifegeek";
+ 
+ /* There are additional settings in version.h that you need to define as well */
