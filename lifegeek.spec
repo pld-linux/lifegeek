@@ -2,12 +2,12 @@ Summary:	"The Life of a Geek" game
 Summary(pl):	Gra "The Life of a Geek" (¯ycie geeka)
 Name:		lifegeek
 Version:	1.0
-%define _pre	b8
+%define _pre	b9
 Release:	0.%{_pre}.1
 License:	GPL v2
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/lifegeek/%{name}-%{version}%{_pre}.tar.gz
-# Source0-md5:	956732ab58737a673327533652acc2c3
+# Source0-md5:	3beef0d05999ec7727efb6db6fdf07b9
 Patch0:		%{name}-path.patch
 BuildRequires:	libstdc++-devel
 URL:		http://lifegeek.sourceforge.net/
