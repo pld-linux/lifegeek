@@ -9,6 +9,7 @@ Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/lifegeek/%{name}-%{version}%{_pre}.tar.gz
 # Source0-md5:	7cf313b14a52b3d87606f98767a23ac0
 Patch0:		%{name}-path.patch
+BuildRequires:	libstdc++-devel
 URL:		http://lifegeek.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
