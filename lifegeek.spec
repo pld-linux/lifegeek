@@ -2,7 +2,7 @@ Summary:	"The Life of a Geek" game
 Summary(pl):	Gra "The Life of a Geek" (¯ycie geeka)
 Name:		lifegeek
 Version:	0.23
-Release:	0.2
+Release:	1
 License:	GPL
 Group:		Applications/Games
 # Source0-md5:	76a6f80bf19de1c140c54b8af66c9595
