@@ -1,0 +1,14 @@
+--- lifegeek/version.c.orig	Wed Jun  4 11:33:02 2003
++++ lifegeek/version.c	Wed Jun  4 11:33:45 2003
+@@ -36,7 +36,7 @@
+ 
+ char* LIFEGEEK_VERSION = "0.23";
+ 
+-char* MAINFILE = "main.lg";
+-char* LICENSEFILE = "license.lg";
+-char* WASTEFILE = "waste.lg";
+-char* JOBFILE="job.lg";
++char* MAINFILE = "/usr/share/lifegeek/main.lg";
++char* LICENSEFILE = "/usr/share/lifegeek/license.lg";
++char* WASTEFILE = "/usr/share/lifegeek/waste.lg";
++char* JOBFILE="/usr/share/lifegeek/job.lg";
