@@ -1,34 +1,19 @@
 diff -burN lifegeek.orig/version.c lifegeek/version.c
---- lifegeek.orig/version.c	2004-08-01 21:14:07.768835776 +0200
-+++ lifegeek/version.c	2004-08-01 21:15:11.238186968 +0200
-@@ -64,10 +64,10 @@
- char* LIFEGEEK_VERSION = "1.0b7";
+--- lifegeek.orig/version.c	2004-08-02 18:53:03.592789632 +0200
++++ lifegeek/version.c	2004-08-02 18:53:51.493507616 +0200
+@@ -65,9 +65,9 @@
  
- #ifndef CONFIG_WIN
+ char* LIFEGEEK_VERSION = "1.0b8";
+ 
 -char* MAINFILE = "/usr/local/share/lifegeek/main.lg";
 -char* LICENSEFILE = "/usr/local/share/lifegeek/license.lg";
 -char* WASTEFILE = "/usr/local/share/lifegeek/waste.lg";
 -char* JOBFILE="/usr/local/share/lifegeek/job.lg";
+-char* SCOREFILE = "/usr/local/share/lifegeek/scores.lgs";
+-char* SAVEFILES = "/usr/local/share/lifegeek";
 +char* MAINFILE = "/usr/share/lifegeek/main.lg";
 +char* LICENSEFILE = "/usr/share/lifegeek/license.lg";
 +char* WASTEFILE = "/usr/share/lifegeek/waste.lg";
 +char* JOBFILE="/usr/share/lifegeek/job.lg";
- #else
- char* MAINFILE = "main.lg";
- char* LICENSEFILE = "license.lg";
-@@ -76,13 +76,13 @@
- #endif
- 
- #ifndef CONFIG_WIN
--char* SCOREFILE = "/usr/local/share/lifegeek/scores.lgs";
 +char* SCOREFILE = "/var/games/lifegeek/scores.lgs";
- #else
- char* SCOREFILE = "scores.lgs";
- #endif
- 
- #ifndef CONFIG_WIN
--char* SAVEFILES = "/usr/local/share/lifegeek";
 +char* SAVEFILES = "/var/games/lifegeek";
- #else
- char* SAVEFILES = "/lifegeek";
- #endif
