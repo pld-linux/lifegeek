@@ -6,6 +6,7 @@ Release:	0.1
 License:	GPL
 Group:		Applications/Games
 Source0:	http://www.geocities.com/core_dump_000/files/%{name}-%{version}.tar.gz
+# Source0-md5:	398b256b648149999125b69b9ecabc2d
 URL:		http://www.geocities.com/core_dump_000/lifegeek.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
