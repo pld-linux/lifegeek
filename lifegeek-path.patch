@@ -1,16 +1,18 @@
---- lifegeek/version.c.orig	Fri Jun 13 21:26:13 2003
-+++ lifegeek/version.c	Sat Jun 14 09:14:39 2003
-@@ -46,9 +46,9 @@
+diff -burN lifegeek.orig/version.c lifegeek/version.c
+--- lifegeek.orig/version.c	2004-03-17 21:52:47.622426272 +0100
++++ lifegeek/version.c	2004-03-17 21:53:34.716266920 +0100
+@@ -56,10 +56,10 @@
     are for the directory where program is run from; change if you are using
     someone's translation and/or installing the program somewhere e.g. 
     "/usr/local/share/lifegeek/main.lg", "main-mytranslation.lg". */
--char* MAINFILE = "main.lg";
--char* LICENSEFILE = "license.lg";
--char* WASTEFILE = "waste.lg";
--char* JOBFILE="job.lg";
+-char* MAINFILE = "/usr/local/share/lifegeek/main.lg";
+-char* LICENSEFILE = "/usr/local/share/lifegeek/license.lg";
+-char* WASTEFILE = "/usr/local/share/lifegeek/waste.lg";
+-char* JOBFILE="/usr/local/share/lifegeek/job.lg";
 +char* MAINFILE = "/usr/share/lifegeek/main.lg";
 +char* LICENSEFILE = "/usr/share/lifegeek/license.lg";
 +char* WASTEFILE = "/usr/share/lifegeek/waste.lg";
 +char* JOBFILE="/usr/share/lifegeek/job.lg";
  
- /* There are additional settings in version.h you need to define as well */
+ /* Score file
+ 
