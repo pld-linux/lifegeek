@@ -1,8 +1,8 @@
 diff -burN lifegeek.orig/version.c lifegeek/version.c
---- lifegeek.orig/version.c	2004-07-09 22:41:06.233012248 +0200
-+++ lifegeek/version.c	2004-07-09 22:42:21.917506456 +0200
-@@ -62,10 +62,10 @@
- char* LIFEGEEK_VERSION = "1.0b6";
+--- lifegeek.orig/version.c	2004-08-01 21:14:07.768835776 +0200
++++ lifegeek/version.c	2004-08-01 21:15:11.238186968 +0200
+@@ -64,10 +64,10 @@
+ char* LIFEGEEK_VERSION = "1.0b7";
  
  #ifndef CONFIG_WIN
 -char* MAINFILE = "/usr/local/share/lifegeek/main.lg";
@@ -16,12 +16,12 @@ diff -burN lifegeek.orig/version.c lifegeek/version.c
  #else
  char* MAINFILE = "main.lg";
  char* LICENSEFILE = "license.lg";
-@@ -74,13 +74,13 @@
+@@ -76,13 +76,13 @@
  #endif
  
  #ifndef CONFIG_WIN
--char* SCOREFILE = "/usr/local/share/scores.lgs";
-+char* SCOREFILE = "/var/games/lifegeek/scores.lgs";
+-char* SCOREFILE = "/usr/local/share/lifegeek/scores.lgs";
++char* SCOREFILE = "/usr/share/lifegeek/scores.lgs";
  #else
  char* SCOREFILE = "scores.lgs";
  #endif
