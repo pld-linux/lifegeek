@@ -1,5 +1,5 @@
 Summary:	"The Life of a Geek" game
-Summary(pl):	Gra "The Life of a Geek"
+Summary(pl):	Gra "The Life of a Geek" (¯ycie geeka)
 Name:		lifegeek
 Version:	0.2
 Release:	0.1
@@ -24,20 +24,32 @@ computer, weakening your computer's health points regularly until
 cleaned.
 
 %description -l pl
-...
+Life of a Geek (¯ycie geeka) to bardzo g³upia gra dzia³aj±ca na
+terminalu tekstowym, w której gracz (geek) musi utrzymaæ dzia³aj±cy
+komputer do czasu ukoñczenia uczelni. Musi szperaæ po Internecie,
+walcz±c z hakerami, aby zdobyæ pieni±dze i lepsze bezpieczeñstwo dla
+maszyny. Musi piæ du¿o kawy, aby trzymaæ siê na nogach, poniewa¿
+je¶li za¶nie, mo¿e naraziæ komputer na atak. Trzeba gromadziæ
+fundusze, aby uczestniczyæ w miesiêcznych kursach doskonal±c swoje
+wykszta³cenie, ale jednocze¶nie trzeba pamiêtaæ, ¿e po¶wiêcanie
+uwagi nauce tak¿e pozostawia komputer otwartym na atak. Gracz musi
+znale¼æ pracê w miejscach typu restauracje fast-food czy sklepy
+spo¿ywcze, ale tu tak¿e musi pamiêtaæ, ¿e w czasie nieobecno¶ci
+komputer pozostaje otwarty na ataki. W komputerze mog± pojawiæ siê
+tak¿e wirusy, regularnie os³abiaj±c zdrowie komputera do czasu
+usuniêcia ich.
 
 %prep
-%setup -q -n lifegeek
+%setup -q -n %{name}
 
 %build
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_bindir}/
-install -d $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
-cp lifegeek $RPM_BUILD_ROOT/%{_bindir}
-cp CHANGELOG LICENSE LIFEGEEK_VERSION NOTE TODO $RPM_BUILD_ROOT/%{_docdir}/%{name}-%{version}
+install -d $RPM_BUILD_ROOT%{_bindir}
+
+install lifegeek $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
