@@ -1,13 +1,12 @@
 Summary:	"The Life of a Geek" game
 Summary(pl):	Gra "The Life of a Geek" (¯ycie geeka)
 Name:		lifegeek
-Version:	1.0
-%define _pre	b9
-Release:	0.%{_pre}.1
+Version:	1.0stable
+Release:	1
 License:	GPL v2
 Group:		Applications/Games
-Source0:	http://dl.sourceforge.net/lifegeek/%{name}-%{version}%{_pre}.tar.gz
-# Source0-md5:	3beef0d05999ec7727efb6db6fdf07b9
+Source0:	http://dl.sourceforge.net/lifegeek/%{name}-%{version}.tar.gz
+# Source0-md5:	14bb196e0524c676177e0862125da7dd
 Patch0:		%{name}-path.patch
 BuildRequires:	libstdc++-devel
 URL:		http://lifegeek.sourceforge.net/
@@ -45,7 +44,7 @@ usuniêcia ich.
 
 %prep
 %setup -q -n %{name}
-%patch -p1
+%patch0 -p1
 
 %build
 %{__make} \
@@ -64,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGELOG INSTALL TODO
+%doc changes readme todo
 %attr(2755,root,games) %{_bindir}/*
 %attr(775,root,games) %dir %{_var}/games/lifegeek
 %{_datadir}/%{name}
