@@ -21,7 +21,7 @@ diff -burN lifegeek.orig/version.c lifegeek/version.c
  
  #ifndef CONFIG_WIN
 -char* SCOREFILE = "/usr/local/share/lifegeek/scores.lgs";
-+char* SCOREFILE = "/usr/share/lifegeek/scores.lgs";
++char* SCOREFILE = "/var/games/lifegeek/scores.lgs";
  #else
  char* SCOREFILE = "scores.lgs";
  #endif
