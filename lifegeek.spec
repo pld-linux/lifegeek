@@ -1,12 +1,13 @@
 Summary:	"The Life of a Geek" game
 Summary(pl):	Gra "The Life of a Geek" (¯ycie geeka)
 Name:		lifegeek
-Version:	0.2
-Release:	0.1
+Version:	0.23
+Release:	0.2
 License:	GPL
 Group:		Applications/Games
+# Source0-md5:	76a6f80bf19de1c140c54b8af66c9595
 Source0:	http://www.geocities.com/core_dump_000/files/%{name}-%{version}.tar.gz
-# Source0-md5:	398b256b648149999125b69b9ecabc2d
+Patch0:		%{name}-path.patch
 URL:		http://www.geocities.com/core_dump_000/lifegeek.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -43,14 +44,17 @@ usuniêcia ich.
 %prep
 %setup -q -n %{name}
 
+%patch -p1
+
 %build
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name}}
 
 install lifegeek $RPM_BUILD_ROOT%{_bindir}
+install *.lg	$RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,3 +63,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGELOG LICENSE LIFEGEEK_VERSION NOTE TODO
 %attr(755,root,root) %{_bindir}/*
+%{_datadir}/%{name}/*.lg
