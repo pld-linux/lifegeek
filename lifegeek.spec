@@ -43,11 +43,12 @@ usuniêcia ich.
 
 %prep
 %setup -q -n %{name}
-
 %patch -p1
 
 %build
-%{__make}
+%{__make} \
+	CXX="%{__cxx}" \
+	CXXFLAGS="%{rpmcflags} -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -63,4 +64,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGELOG LICENSE LIFEGEEK_VERSION NOTE TODO
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/%{name}/*.lg
+%{_datadir}/%{name}
