@@ -2,11 +2,11 @@ Summary:	"The Life of a Geek" game
 Summary(pl):	Gra "The Life of a Geek" (¯ycie geeka)
 Name:		lifegeek
 Version:	1.0
-Release:	0.b1
+Release:	0.b2
 License:	GPL v2
 Group:		Applications/Games
-Source0:	http://dl.sourceforge.net/lifegeek/%{name}-%{version}b1-2.tar.gz
-# Source0-md5:	7edcc73f9bc45fdef0b0e51e061dc80a
+Source0:	http://dl.sourceforge.net/lifegeek/%{name}-%{version}b2.tar.gz
+# Source0-md5:	2606e511e637da37ed1a5f75c7977aa6
 Patch0:		%{name}-path.patch
 URL:		http://lifegeek.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -52,7 +52,7 @@ usuniêcia ich.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name},%{_var}/games/%{name}}
 
 install lifegeek $RPM_BUILD_ROOT%{_bindir}
 install *.lg     $RPM_BUILD_ROOT%{_datadir}/%{name}
@@ -63,5 +63,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGELOG INSTALL TODO
-%attr(755,root,root) %{_bindir}/*
+%attr(2755,root,games) %{_bindir}/*
+%attr(775,root,games) %dir %{_var}/games/lifegeek
 %{_datadir}/%{name}
