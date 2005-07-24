@@ -1,15 +1,15 @@
 Summary:	"The Life of a Geek" game
 Summary(pl):	Gra "The Life of a Geek" (¯ycie geeka)
 Name:		lifegeek
-Version:	1.01stable
+Version:	1.03stable
 Release:	1
 License:	GPL v2
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/lifegeek/%{name}-%{version}.tar.gz
-# Source0-md5:	9b0b19033b1302988c98f99410775120
+# Source0-md5:	9975e26e31f17e1843e155c38f8c98c3
 Patch0:		%{name}-path.patch
 BuildRequires:	libstdc++-devel
-URL:		http://lifegeek.sourceforge.net/
+URL:		http://danq.lunarpages.com/lifegeek/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,7 +43,7 @@ tak¿e wirusy, regularnie os³abiaj±c zdrowie komputera do czasu
 usuniêcia ich.
 
 %prep
-%setup -q -n %{name}
+%setup -q -n lginst
 %patch0 -p1
 
 %build
@@ -57,6 +57,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name},%{_var}/games/%{name}}
 
 install lifegeek $RPM_BUILD_ROOT%{_bindir}
 install *.lg     $RPM_BUILD_ROOT%{_datadir}/%{name}
+install scores.lgs $RPM_BUILD_ROOT%{_var}/games/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -66,4 +67,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc changes readme todo
 %attr(2755,root,games) %{_bindir}/*
 %attr(775,root,games) %dir %{_var}/games/lifegeek
+%attr(664,root,games) %{_var}/games/lifegeek/scores.lgs
 %{_datadir}/%{name}
