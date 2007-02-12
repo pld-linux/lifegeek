@@ -1,5 +1,5 @@
 Summary:	"The Life of a Geek" game
-Summary(pl):	Gra "The Life of a Geek" (¯ycie geeka)
+Summary(pl.UTF-8):   Gra "The Life of a Geek" (Å»ycie geeka)
 Name:		lifegeek
 Version:	1.04stable
 Release:	1
@@ -26,21 +26,21 @@ your computer leaves it open to attack. Virii may also appear on your
 computer, weakening your computer's health points regularly until
 cleaned.
 
-%description -l pl
-Life of a Geek (¯ycie geeka) to bardzo g³upia gra dzia³aj±ca na
-terminalu tekstowym, w której gracz (geek) musi utrzymaæ dzia³aj±cy
-komputer do czasu ukoñczenia uczelni. Musi szperaæ po Internecie,
-walcz±c z hakerami, aby zdobyæ pieni±dze i lepsze bezpieczeñstwo dla
-maszyny. Musi piæ du¿o kawy, aby trzymaæ siê na nogach, poniewa¿
-je¶li za¶nie, mo¿e naraziæ komputer na atak. Trzeba gromadziæ
-fundusze, aby uczestniczyæ w miesiêcznych kursach doskonal±c swoje
-wykszta³cenie, ale jednocze¶nie trzeba pamiêtaæ, ¿e po¶wiêcanie
-uwagi nauce tak¿e pozostawia komputer otwartym na atak. Gracz musi
-znale¼æ pracê w miejscach typu restauracje fast-food czy sklepy
-spo¿ywcze, ale tu tak¿e musi pamiêtaæ, ¿e w czasie nieobecno¶ci
-komputer pozostaje otwarty na ataki. W komputerze mog± pojawiæ siê
-tak¿e wirusy, regularnie os³abiaj±c zdrowie komputera do czasu
-usuniêcia ich.
+%description -l pl.UTF-8
+Life of a Geek (Å»ycie geeka) to bardzo gÅ‚upia gra dziaÅ‚ajÄ…ca na
+terminalu tekstowym, w ktÃ³rej gracz (geek) musi utrzymaÄ‡ dziaÅ‚ajÄ…cy
+komputer do czasu ukoÅ„czenia uczelni. Musi szperaÄ‡ po Internecie,
+walczÄ…c z hakerami, aby zdobyÄ‡ pieniÄ…dze i lepsze bezpieczeÅ„stwo dla
+maszyny. Musi piÄ‡ duÅ¼o kawy, aby trzymaÄ‡ siÄ™ na nogach, poniewaÅ¼
+jeÅ›li zaÅ›nie, moÅ¼e naraziÄ‡ komputer na atak. Trzeba gromadziÄ‡
+fundusze, aby uczestniczyÄ‡ w miesiÄ™cznych kursach doskonalÄ…c swoje
+wyksztaÅ‚cenie, ale jednoczeÅ›nie trzeba pamiÄ™taÄ‡, Å¼e poÅ›wiÄ™canie
+uwagi nauce takÅ¼e pozostawia komputer otwartym na atak. Gracz musi
+znaleÅºÄ‡ pracÄ™ w miejscach typu restauracje fast-food czy sklepy
+spoÅ¼ywcze, ale tu takÅ¼e musi pamiÄ™taÄ‡, Å¼e w czasie nieobecnoÅ›ci
+komputer pozostaje otwarty na ataki. W komputerze mogÄ… pojawiÄ‡ siÄ™
+takÅ¼e wirusy, regularnie osÅ‚abiajÄ…c zdrowie komputera do czasu
+usuniÄ™cia ich.
 
 %prep
 %setup -q -n lginst
