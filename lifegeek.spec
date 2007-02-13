@@ -1,5 +1,5 @@
 Summary:	"The Life of a Geek" game
-Summary(pl.UTF-8):   Gra "The Life of a Geek" (Życie geeka)
+Summary(pl.UTF-8):	Gra "The Life of a Geek" (Życie geeka)
 Name:		lifegeek
 Version:	1.04stable
 Release:	1
